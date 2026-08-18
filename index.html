@@ -22,22 +22,23 @@
 
   .app {
     width: 100%;
-    max-width: 420px;
+    max-width: 440px;
     background: #ffffff;
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    padding: 30px 40px;
+    padding: 36px 40px;
   }
 
   h1 {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
     font-size: 22px;
     color: #333;
     text-align: center;
+    letter-spacing: 0.02em;
   }
 
   .stats {
-    margin: 0 0 20px;
+    margin: 0 0 26px;
     font-size: 13px;
     color: #999;
     text-align: center;
@@ -47,17 +48,18 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 10px;
+    gap: 10px;
+    margin-bottom: 16px;
   }
 
   #taskInput {
-    flex: 1 1 120px;
+    flex: 1 1 140px;
     min-width: 0;
-    padding: 10px 14px;
+    padding: 11px 14px;
     border: 1px solid #dcdfe4;
     border-radius: 8px;
     font-size: 15px;
+    line-height: 1.4;
     outline: none;
     transition: border-color 0.2s;
   }
@@ -67,10 +69,10 @@
   }
 
   #dueInput {
-    flex: 1 1 130px;
+    flex: 1 1 140px;
     min-width: 0;
-    max-width: 150px;
-    padding: 10px 10px;
+    max-width: 160px;
+    padding: 11px 10px;
     border: 1px solid #dcdfe4;
     border-radius: 8px;
     font-size: 14px;
@@ -80,13 +82,14 @@
   }
 
   #addBtn {
-    flex: 0 0 auto;
-    padding: 10px 18px;
+    flex: 1 1 100%;
+    padding: 11px 18px;
     border: none;
     border-radius: 8px;
     background: #6c8cff;
     color: #fff;
     font-size: 15px;
+    font-weight: bold;
     cursor: pointer;
     transition: background 0.2s;
     white-space: nowrap;
@@ -106,8 +109,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 14px;
-    margin-bottom: 8px;
+    padding: 14px 16px;
+    margin-bottom: 10px;
     background: #f8f9fb;
     border-radius: 10px;
     cursor: pointer;
@@ -127,10 +130,11 @@
     word-break: break-all;
     color: #333;
     font-size: 15px;
+    line-height: 1.5;
   }
 
   #taskList li .task-due {
-    margin-top: 4px;
+    margin-top: 6px;
     font-size: 12px;
     color: #999;
   }
@@ -146,14 +150,15 @@
   }
 
   #taskList li .delete-btn {
+    flex: 0 0 auto;
     border: none;
     background: transparent;
     color: #ff6b6b;
     font-size: 13px;
     cursor: pointer;
-    padding: 4px 8px;
+    padding: 6px 10px;
     border-radius: 6px;
-    margin-left: 10px;
+    margin-left: 16px;
   }
 
   #taskList li .delete-btn:hover {
@@ -171,12 +176,12 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .filter-btn {
     flex: 1;
-    padding: 8px 0;
+    padding: 9px 0;
     border: 1px solid #dcdfe4;
     border-radius: 8px;
     background: #fff;
@@ -198,8 +203,8 @@
 
   #searchInput {
     width: 100%;
-    padding: 10px 14px;
-    margin-bottom: 12px;
+    padding: 11px 14px;
+    margin-bottom: 18px;
     border: 1px solid #dcdfe4;
     border-radius: 8px;
     font-size: 14px;
